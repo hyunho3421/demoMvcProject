@@ -5,11 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/graph/*")
+@RequestMapping("/graph/")
 public class GraphController {
 
-    @GetMapping("test")
-    public String test() {
-        return "";
+    @GetMapping("graph")
+    public String graph() {
+        
+
+        return "graph/graph";
     }
 }
